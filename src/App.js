@@ -7,6 +7,9 @@ import Jackets from "./components/routes/Jackets";
 import Pants from "./components/routes/Pants";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Authentication from "./components/routes/authentication/Authentication";
+import About from "./components/routes/About";
+import Brands from "./components/routes/Brands";
 
 const App = ()=>{
   return (<>
@@ -18,6 +21,9 @@ const App = ()=>{
   <Route path="/shoes" element={<Shoes/>}/>
   <Route path="/jackets" element={<Jackets/>}/>
   <Route path="/pants" element={<Pants/>}/>
+  <Route path="/auth" element={<Authentication/>}/>
+  <Route path="/about" element={<About/>}/>
+  <Route path="/brands" element={<Brands/>}/>
 </Routes>
 <Footer/>
 </>);
